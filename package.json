@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-hw-07-phonebook",
+  "name": "goit-react-hw-08-phonebook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vanTymoshchuk.github.io/goit-react-hw-07-phonebook/",
+  "homepage": "https://vanTymoshchuk.github.io/goit-react-hw-08-phonebook/",
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
     "@emotion/react": "^11.11.1",
