@@ -3,8 +3,8 @@ import { ListWrap, List } from './ContactList.styled';
 import { Button } from 'components/FormList/FormList.styled';
 import { UserDeleteOutlined } from '@ant-design/icons';
 import { useSelector, useDispatch } from 'react-redux';
-import { getVisibleContacts } from 'redux/selectors';
-import { deleteContact } from 'redux/operations';
+import { getVisibleContacts } from 'redux/contacts/selectors';
+import { deleteContact } from 'redux/contacts/operations';
 
 const ContactList = () => {
   const contacts = useSelector(getVisibleContacts);
