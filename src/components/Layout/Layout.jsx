@@ -1,17 +1,15 @@
-import React from 'react';
-import { Container } from './Layout.styled';
-import PropTypes from 'prop-types';
+import { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
 
- const Layout = ({ children }) => {
+import {AppBar} from '../AppBar/AppBar';
+
+export const Layout = () => {
   return (
-    <Container>
-      <main>{children}</main>
-    </Container>
+    <>
+      <AppBar />
+      <Suspense fallback={null}>
+        <Outlet />
+      </Suspense>
+    </>
   );
 };
-
-Layout.propTypes = {
-   children: PropTypes.any.isRequired,
-};
-
-export default Layout;

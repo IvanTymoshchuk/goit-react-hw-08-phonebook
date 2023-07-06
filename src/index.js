@@ -6,18 +6,18 @@ import { ThemeProvider } from '@emotion/react';
 import { BrowserRouter } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 import { theme } from './components/theme';
-import App from 'components/App';
+import { App } from 'components/App';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <Provider store={store}>
-        <BrowserRouter basename="/goit-react-hw-08-phonebook">
-          <PersistGate loading={null} persistor={persistor}>
+        <PersistGate loading={null} persistor={persistor}>
+          <BrowserRouter basename="/goit-react-hw-08-phonebook">
             <App />
-          </PersistGate>
-        </BrowserRouter>
+          </BrowserRouter>
+        </PersistGate>
       </Provider>
     </ThemeProvider>
   </React.StrictMode>
