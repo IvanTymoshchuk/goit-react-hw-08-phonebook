@@ -66,7 +66,7 @@ export const Button = styled.button`
 export const Span = styled.span`
   position: absolute;
   display: block;
-  :nth-child(1) {
+  :nth-of-type(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -83,7 +83,7 @@ export const Span = styled.span`
       }
     }
   }
-  :nth-child(2) {
+  :nth-of-type(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -101,7 +101,7 @@ export const Span = styled.span`
       top: 100%;
     }
   }
-  :nth-child(3) {
+  :nth-of-type(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -119,7 +119,7 @@ export const Span = styled.span`
       right: 100%;
     }
   }
-  :nth-child(4) {
+  :nth-of-type(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
