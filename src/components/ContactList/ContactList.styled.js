@@ -3,8 +3,8 @@ import styled from '@emotion/styled';
 export const ListWrap = styled.ul`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  width: 400px;
   padding: ${(p) => p.theme.space[4]}px;
 `;
 export const List = styled.li`

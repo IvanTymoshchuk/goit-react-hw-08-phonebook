@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import { Link } from '../AuthNav/AuthNav.styled';
 import { useAuth } from 'hooks';
 
@@ -8,7 +7,7 @@ export const Navigation = () => {
   return (
     <nav>
       <Link to="/">Home</Link>
-      {isLoggedIn && <NavLink to="/contacts">Contacts</NavLink>}
+      {isLoggedIn && <Link to="/contacts">Contacts</Link>}
     </nav>
   );
 };

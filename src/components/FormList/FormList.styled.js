@@ -38,6 +38,7 @@ export const Button = styled.button`
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   box-shadow: ${(p) => p.theme.boxShadow.boxShadow};
+  margin-left:15px;
   :focus,
   :hover {
     color: ${(p) => p.theme.colors.green}; 
