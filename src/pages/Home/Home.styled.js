@@ -16,7 +16,7 @@ export const Title = styled.h1`
 `;
 
 export const Link = styled(NavLink)`
-  margin-top: 20px;
+  margin-top: 25px;
   padding: 10px;
   border: 0px solid transparent;
   border-radius: 4px;
