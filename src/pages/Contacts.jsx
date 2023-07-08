@@ -7,7 +7,7 @@ import ContactList from '../components/ContactList/ContactList';
 import Filter from '../components/Filter/Filter';
 import GlobalTitle from '../components/Layout/Title';
 
-function Contacts() {
+const Contacts = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -24,6 +24,6 @@ function Contacts() {
       </HelmetProvider>
     </>
   );
-}
+};
 
 export default Contacts;
